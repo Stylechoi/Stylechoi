@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hello, my name is choi!</title>
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      background: #16345A; /* ✅ 네이비 배경 */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* 전체 화면 배경 & 중앙 정렬 */
+    html, body {
+      margin: 0; padding: 0;
+      width: 100%; height: 100vh;
+      background: #0d1117;
+      overflow: hidden;
+      display: flex; justify-content: center; align-items: center;
     }
 
-    .text-wrap {
-      width: 100%;
-      height: 80px; /* ✅ 높이 줄임 */
-      background: #16345A;
+    .center-wrap {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    svg text {
+    svg {
+      overflow: visible;
+    }
+
+    /* tspan 하나하나에 애니메이션 */
+    tspan {
       font-family: 'Staatliches', cursive;
-      font-size: 2.8em; /* ✅ 글자 크기 줄임 */
+      font-size: 2.8em;
       fill: transparent;
       stroke: #F1C164;
       stroke-width: 2px;
       stroke-dasharray: 300px;
       stroke-dashoffset: 300px;
-      animation: stroke 1s linear forwards;
+      animation: draw 1s linear forwards;
     }
 
-    /* 글자별 딜레이 */
-    svg text:nth-child(1) { animation-delay: 0s; }
-    svg text:nth-child(2) { animation-delay: 0.2s; }
-    svg text:nth-child(3) { animation-delay: 0.4s; }
-    svg text:nth-child(4) { animation-delay: 0.6s; }
-    svg text:nth-child(5) { animation-delay: 0.8s; }
-    svg text:nth-child(6) { animation-delay: 1.0s; }
-    svg text:nth-child(7) { animation-delay: 1.2s; }
-    svg text:nth-child(8) { animation-delay: 1.4s; }
-    svg text:nth-child(9) { animation-delay: 1.6s; }
-    svg text:nth-child(10) { animation-delay: 1.8s; }
-    svg text:nth-child(11) { animation-delay: 2.0s; }
-    svg text:nth-child(12) { animation-delay: 2.2s; }
-    svg text:nth-child(13) { animation-delay: 2.4s; }
-    svg text:nth-child(14) { animation-delay: 2.6s; }
-    svg text:nth-child(15) { animation-delay: 2.8s; }
-    svg text:nth-child(16) { animation-delay: 3.0s; }
-    svg text:nth-child(17) { animation-delay: 3.2s; }
-    svg text:nth-child(18) { animation-delay: 3.4s; }
-    svg text:nth-child(19) { animation-delay: 3.6s; }
-    svg text:nth-child(20) { animation-delay: 3.8s; }
+    /* 순차 지연: 0.2s 간격 (총 21개) */
+    tspan:nth-child(1)  { animation-delay: 0s;   }
+    tspan:nth-child(2)  { animation-delay: 0.2s; }
+    tspan:nth-child(3)  { animation-delay: 0.4s; }
+    tspan:nth-child(4)  { animation-delay: 0.6s; }
+    tspan:nth-child(5)  { animation-delay: 0.8s; }
+    tspan:nth-child(6)  { animation-delay: 1.0s; }
+    tspan:nth-child(7)  { animation-delay: 1.2s; }
+    tspan:nth-child(8)  { animation-delay: 1.4s; }
+    tspan:nth-child(9)  { animation-delay: 1.6s; }
+    tspan:nth-child(10) { animation-delay: 1.8s; }
+    tspan:nth-child(11) { animation-delay: 2.0s; }
+    tspan:nth-child(12) { animation-delay: 2.2s; }
+    tspan:nth-child(13) { animation-delay: 2.4s; }
+    tspan:nth-child(14) { animation-delay: 2.6s; }
+    tspan:nth-child(15) { animation-delay: 2.8s; }
+    tspan:nth-child(16) { animation-delay: 3.0s; }
+    tspan:nth-child(17) { animation-delay: 3.2s; }
+    tspan:nth-child(18) { animation-delay: 3.4s; }
+    tspan:nth-child(19) { animation-delay: 3.6s; }
+    tspan:nth-child(20) { animation-delay: 3.8s; }
+    tspan:nth-child(21) { animation-delay: 4.0s; }
 
-    @keyframes stroke {
-      0% {
-        stroke-dashoffset: 300px;
-        fill: transparent;
-      }
-      70% {
-        fill: transparent;
-      }
-      100% {
+    @keyframes draw {
+      to {
         stroke-dashoffset: 0;
         fill: #F1C164;
       }
@@ -74,31 +70,34 @@
   </style>
 </head>
 <body>
-  <div class="text-wrap">
-    <svg width="1050" height="80" viewBox="0 0 1050 80">
-      <text x="0" y="50%">H</text>
-      <text x="50" y="50%">E</text>
-      <text x="100" y="50%">L</text>
-      <text x="150" y="50%">L</text>
-      <text x="200" y="50%">O</text>
-      <text x="250" y="50%">,</text>
-
-      <text x="320" y="50%">M</text>
-      <text x="380" y="50%">Y</text>
-
-      <text x="460" y="50%">N</text>
-      <text x="510" y="50%">A</text>
-      <text x="560" y="50%">M</text>
-      <text x="610" y="50%">E</text>
-
-      <text x="680" y="50%">I</text>
-      <text x="710" y="50%">S</text>
-
-      <text x="780" y="50%">C</text>
-      <text x="830" y="50%">H</text>
-      <text x="880" y="50%">O</text>
-      <text x="930" y="50%">I</text>
-      <text x="980" y="50%">!</text>
+  <div class="center-wrap">
+    <svg width="700" height="100" viewBox="0 0 700 100"
+         xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="50%">
+        <tspan>H</tspan>
+        <tspan dx="5">E</tspan>
+        <tspan dx="5">L</tspan>
+        <tspan dx="5">L</tspan>
+        <tspan dx="5">O</tspan>
+        <tspan dx="5">,</tspan>
+        <!-- 쉼표 뒤 공백 -->
+        <tspan dx="5"> </tspan>
+        <tspan dx="5">M</tspan>
+        <tspan dx="5">Y</tspan>
+        <!-- 단어 사이 공백 -->
+        <tspan dx="5"> </tspan>
+        <tspan dx="15">N</tspan>
+        <tspan dx="5">A</tspan>
+        <tspan dx="5">M</tspan>
+        <tspan dx="5">E</tspan>
+        <tspan dx="15">I</tspan>
+        <tspan dx="5">S</tspan>
+        <tspan dx="15">C</tspan>
+        <tspan dx="5">H</tspan>
+        <tspan dx="5">O</tspan>
+        <tspan dx="5">I</tspan>
+        <tspan dx="15">!</tspan>
+      </text>
     </svg>
   </div>
 </body>
