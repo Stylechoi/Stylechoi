@@ -1,4 +1,7 @@
-<img src="assets/demo.gif" alt="demo" width="60%" />
+<a href="https://github.com/Stylechoi" target="_blank">
+  <img src="assets/demo.gif" alt="demo" width="60%" />
+</a>
+
 
 
 
