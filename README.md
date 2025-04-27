@@ -2,9 +2,6 @@
   <img src="assets/demo.gif" alt="demo" width="60%" />
 </p>
 
-# Hello, My Name Is Choi!
-
----
 
 ## 🚀 Projects
 
@@ -17,7 +14,7 @@
 - 📔 **[Daily Technical Retrospectives (TIL)](https://github.com/Stylechoi/til-python)**  
   부트캠프 여정과 삽질 기록을 매일 Markdown으로 작성해 올리는 꾸준함의 결과물
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -29,16 +26,20 @@
   <img src="https://img.shields.io/badge/Status-Beginner-lightgrey.svg" alt="Status: Beginner" />
 </p>
 
----
+
 
 ## 📆 Roadmap
 
+<p>
 1. HTML/CSS 마스터 ✔️  
 2. JavaScript & React 학습 진행 중 🚧  
 3. 백엔드(Node.js) 기초 다지기 🔜
+</p>
 
----
 
 ## 📊 GitHub Stats
+<p>
 
 ![dohyung's GitHub stats](https://github-readme-stats.vercel.app/api?username=Stylechoi&show_icons=true)
+
+</p>
