@@ -1,3 +1,3 @@
-<img src="assets/demo.gif" alt="demo" style="width:50%;" />
+<img src="assets/demo.gif" alt="demo" style="width:60%;" />
 
 
