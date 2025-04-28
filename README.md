@@ -1,8 +1,9 @@
 <p align="center">
   <a href="https://github.com/Stylechoi" target="_blank">
-    <img src="assets/demo.gif" alt="HELLO, MY NAME IS CHOI!" width="60%" />
+    햣 MY NAME IS CHOI!" width="60%" />
   </a>
 </p>
+
 
 <br><br>
 
