@@ -1,11 +1,19 @@
+
 <p align="center">
   <a href="https://github.com/Stylechoi" target="_blank">
-    <img src="assets/demo2.gif" alt="HELLO, MY NAME IS CHOI!" width="60%" />
+    <img src="https://github.com/Stylechoi/Stylechoi/raw/main/assets/demo3.gif" alt="introduce box!" width="60%" />
   </a>
 </p>
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=1000&color=3DF74E&width=435&lines=%3Cp%3EI'm+studying+front-end++development%3C%2Fp%3E)](https://git.io/typing-svg)
+
+<br><br>
+
+<p align="center">
+  <a href="https://git.io/typing-svg" target="_blank">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=1000&color=3DF74E&width=435&lines=%3Cp%3EI'm+studying+front-end++development%3C%2Fp%3E" alt="Typing SVG" />
+  </a>
+</p>
 
 
 
