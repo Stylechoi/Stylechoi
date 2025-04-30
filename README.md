@@ -5,6 +5,8 @@
 </p>
 
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=1000&color=3DF74E&width=435&lines=%3Cp%3EI'm+studying+front-end++development%3C%2Fp%3E)](https://git.io/typing-svg)
+
 
 
 <br><br>
